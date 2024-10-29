@@ -23,5 +23,27 @@ router.post('/',(req,res)=> {
 });
 
 
+//untuk menghapus tugas
+router.delete('/:id', (req, res) => {
+    const todoIndex = todos.findIndex(t => t.id === parseInt(req.params.id));
+    if (todoIndex ===-1) return res.status(404).json({ message: 'Tugas tidak ditemukan'});
+
+    const deletedTodo = todos.splice (todoIndex, 1)[0]; 
+    res.status (200).json({ message: `Tugas '${deletedTodo.task}' telah dihapus`});
+    });
+
+//memperbarui tugas
+router.put('/:id', (req, res) => {
+    const todo = todos.find(t => t.id === parseInt(req.params.id));
+    if (!todo) return res.status(404).json({ message: 'Tugas tidak ditemukan'}); 
+    todo.task = req.body.task || todo.task;
+
+    res.status(200).json({
+        message:`Tugas dengan ID ${todo.id} telah diperbarui`,
+        updatedTodo: todo
+        
+        });
+});
+
 module.exports = router;
 
