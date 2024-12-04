@@ -1,0 +1,116 @@
+.container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Judul utama */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Paragraf */
+p {
+    font-size: 1.2rem;
+    color: #34495e;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Styling untuk heading 2 */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2980b9;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Styling untuk list */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+ul li {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin: 10px 0;
+}
+
+/* Styling untuk card */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling gambar di dalam card */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Styling untuk teks di dalam card */
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+/* Styling untuk tombol */
+.btn-primary {
+    background-color: #2980b9;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #3498db;
+}
+
+/* Styling footer atau bagian hubungi kami */
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer a {
+    font-size: 1.1rem;
+    color: #2980b9;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

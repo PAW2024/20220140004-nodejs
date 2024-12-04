@@ -1,0 +1,84 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color:#007bff;
+}
+
+.login-container {
+    text-align: center;  
+    padding: 20px;
+    background-color:#007bff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-container img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.login-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.mb-3 {
+    text-align: left;
+}
+
+.logo {
+    max-width: 100px;  /* Mengatur ukuran maksimum gambar */
+    width: 80%;  /* Agar tetap responsif */
+    height: auto;  /* Menjaga proporsi gambar */
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-size: 14px;
+}
+
+.form-control {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
